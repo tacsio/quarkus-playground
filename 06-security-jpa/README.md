@@ -207,12 +207,10 @@ Inclusive existe um trecho na própria RFC com considerações de segurança que
 authentication, nor does it in any way protect the entity, which is
 transmitted in cleartext across the physical network used as the
 carrier. HTTP does not prevent the addition of enhancements (such as
-schemes to use one-time passwords) to Basic authentication.
-
+schemes to use one-time passwords) to Basic authentication.<br><br>
 The most serious flaw of Basic authentication is that it results in
 the cleartext transmission of the user's password over the physical
-network. Many other authentication schemes address this problem.
-
+network. Many other authentication schemes address this problem.<br><br>
 Because Basic authentication involves the cleartext transmission of
 passwords, it SHOULD NOT be used (without enhancements such as HTTPS
 [RFC2818]) to protect sensitive or valuable information.
