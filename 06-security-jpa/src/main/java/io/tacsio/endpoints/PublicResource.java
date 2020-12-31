@@ -13,6 +13,6 @@ public class PublicResource {
 	@GET
 	@PermitAll
 	public String publicPath() {
-		return "public";
+		return "public path";
 	}
 }

@@ -13,6 +13,6 @@ public class AdminResource {
     @GET
     @RolesAllowed("admin")
     public String adminPath() {
-        return "admin";
+        return "admin path";
     }
 }
