@@ -14,8 +14,8 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 @ApplicationScoped
-public class AnimeConverter {
-    public List<Anime> convert() {
+public class AnimeParser {
+    public List<Anime> parse() {
         try {
             URL resource = getClass().getClassLoader().getResource("animes.txt");
             Path path = Paths.get(resource.toURI());

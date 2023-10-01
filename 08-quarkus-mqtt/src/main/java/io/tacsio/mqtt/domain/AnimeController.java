@@ -1,6 +1,6 @@
 package io.tacsio.mqtt.domain;
 
-import io.tacsio.mqtt.Sender;
+import io.tacsio.mqtt.infra.Sender;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.Path;
 
@@ -14,8 +14,8 @@ public class AnimeController {
     private List<Anime> animes;
     private Sender sender;
 
-    public AnimeController(AnimeConverter animeConverter, Sender sender) {
-        this.animes = animeConverter.convert();
+    public AnimeController(AnimeParser animeParser, Sender sender) {
+        this.animes = animeParser.parse();
         this.sender = sender;
     }
 
